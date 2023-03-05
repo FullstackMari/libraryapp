@@ -1,0 +1,79 @@
+/* @import url (https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css); */
+
+
+
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  background-color: #624a2e;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.center {
+  text-align: center;
+  font-weight: bold;
+}
+
+.container {
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+  display: block;
+}
+
+.input {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  border-radius: 25px;
+  width: 300px;
+  height: 25px;
+}
+
+.list {
+  display: flex;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  margin-top: 30px;
+  column-count: 3;
+  list-style-type: none;
+  display: inline-block;
+}
+
+.list-item {
+  display: flex;
+  background-color: moccasin;
+  /* margin: 20px; */
+  padding: 20px;
+  margin-bottom: 10px;
+  width: 70%;
+  text-align: center;
+  border-style:solid;
+  font-size: 10px;
+}
+
+ul {
+  /* -webkit-column-count: 3;
+  -moz-column-count: 3; */
+  margin-top: 30px;
+  /* column-count: 3; */
+  list-style-type: none;
+  display: inline-block;
+}
+
+/* inline block...fix uneven boxes */
+/* https://stackoverflow.com/questions/25800067/how-to-divide-list-in-a-single-ul-into-3-columns */
+/* create 3 rows */
+
+newsletter {
+  margin: 20px;
+}

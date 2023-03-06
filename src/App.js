@@ -2,11 +2,12 @@ import React, { useState, useEffect } from "react";
 import './index.css';
 import Search from "./Search";
 import Newsletter from "./Newsletter";
-import About from "./About";
-import Contact from "./Contact";
 import Navbar from "./Navbar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function App() {
+
   const [data, setData] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -78,7 +79,16 @@ function App() {
   //? : search < 1 displays ul 1, search > 1 displays ul
   return (
     <div className="container">
-      <Navbar />
+      <div class="thing">
+         <Navbar />
+          <Link to="home">Click to view our home page</Link>
+          <br />
+          <Link to="about">Click to view our about page</Link>
+          <br />
+          <Link to="contact">Click to view our contact page</Link>
+          <h1>LIBRARY SEARCH APP</h1>
+      </div>
+     
       
       <Search term={search} searchKeyword={searchHandler}/>
       

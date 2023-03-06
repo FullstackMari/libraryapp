@@ -75,13 +75,22 @@ ul {
 /* inline block...fix uneven boxes */
 /* https://stackoverflow.com/questions/25800067/how-to-divide-list-in-a-single-ul-into-3-columns */
 /* create 3 rows */
-
-/* newsletter {
+/*  
+newsletter {
   margin: 20px;
 } */
+
+button {
+  margin-bottom: 10px;
+  
+}
 
 .navbar {
   padding: 5px;
   border-radius: 5px solid black;
 
+}
+
+.thing {
+  border: 5px pink;
 }

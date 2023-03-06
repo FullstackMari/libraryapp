@@ -81,12 +81,14 @@ function App() {
     <div className="container">
       <div class="thing">
          <Navbar />
-          <Link to="home">Click to view our home page</Link>
+          <Link to="home">HOME</Link>
+          {' '}
+          <Link to="about">ONLINE RESOURCES</Link>
+          {' '}
+          <Link to="contact">HELP</Link>
           <br />
-          <Link to="about">Click to view our about page</Link>
-          <br />
-          <Link to="contact">Click to view our contact page</Link>
-          <h1>LIBRARY SEARCH APP</h1>
+          <h1 className="h1">OPEN LIBRARY SEARCH APP</h1>
+
       </div>
      
       

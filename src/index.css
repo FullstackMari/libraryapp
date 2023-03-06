@@ -8,7 +8,7 @@ body {
   text-align: center;
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-  background-color: #624a2e;
+  background-color: tan;
 }
 
 code {
@@ -31,7 +31,7 @@ code {
 
 .input {
   /* margin-top: 10px; */
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   text-align: center;
   border-radius: 25px;
   width: 300px;
@@ -67,7 +67,7 @@ code {
 }
 
 ul {
-  margin-top: 30px;
+  /* margin-top: 20px; */
   list-style-type: none;
   display: inline-block;
 }
@@ -88,9 +88,30 @@ button {
 .navbar {
   padding: 5px;
   border-radius: 5px solid black;
+  text-align: center;
 
+}
+
+a {
+  /* font-stretch: expanded; */
+  font-weight: bold;
+  /* background-color: white;; */
 }
 
 .thing {
-  border: 5px pink;
+  text-align: center;
+  /* padding: 8px; */
+  margin-bottom: -20px;
+  margin-top: 5px;
 }
+
+.h1 {
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  /* color: white; */
+  background-color: white;
+  display: inline-flex;
+  text-align: center;  /* inline block to keep background only around text */
+}
+

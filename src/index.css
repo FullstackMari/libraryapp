@@ -30,15 +30,15 @@ code {
 }
 
 .input {
-  /* margin-top: 10px; */
-  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
   text-align: center;
   border-radius: 25px;
   width: 300px;
   height: 25px;
 }
 
-.mainlist {
+/* .mainlist {
   display: flex;
   -webkit-column-count: 3;
   -moz-column-count: 3;
@@ -46,7 +46,7 @@ code {
   column-count: 3;
   list-style-type: none;
   display: inline-block;
-}
+} */
 
 .list-item {
   display: flex;
@@ -105,13 +105,15 @@ a {
   margin-top: 5px;
 }
 
-.h1 {
+/* .h1 {
   padding: 5px;
   margin-top: 10px;
   margin-bottom: 40px;
-  /* color: white; */
   background-color: white;
   display: inline-flex;
-  text-align: center;  /* inline block to keep background only around text */
-}
+  text-align: center;
+} */
 
+/* .imglogo {
+  margin-top: -40px;
+} */

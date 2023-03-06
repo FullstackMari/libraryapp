@@ -86,7 +86,9 @@ function App() {
           {' '}
           <Link to="contact">HELP</Link>
           <br />
-          <h1 className="h1">OPEN LIBRARY SEARCH APP</h1>
+          {/* <h1 className="h1">OPEN LIBRARY SEARCH APP</h1> */}
+          <img className="imglogo" src="https://openlibrary.org/static/images/openlibrary-logo-tighter.svg" height="120" width="220" alt="openlibrary.org logo"></img>
+
 
       </div>
      

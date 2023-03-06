@@ -1,70 +1,13 @@
-# Getting Started with Create React App
+This application is comprised of 3 pages
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The home page (App.js) uses the hooks useState to update information/input from the user and API (data) and useEffect is crucial to fetching data from the API (Open Library) - it has methods to collect information from the API (JSON) and error handling in case the data is not able to be reached.
 
-## Available Scripts
+The home page fetches all books written by Isaac Asimov and these these values are displayed as list items inside of an ul positioned in CSS.
 
-In the project directory, you can run:
+The routing is slightly faulty - nothing displays on localport:3000 but there are 3 pages which do: home, about, and contact which I eventually renamed to HOME, ONLINE RESOURCES, AND HELP because the context for the site changed midway. I later included relevant links rather than empty pages as I initially intended to for demonstration purposes.
 
-### `npm start`
+The search component is exported to the main page but I have not yet been able to make it function as intended. Data has been fetched from Open Library but I could not figure out the error in my initial conditional state which used the ternary operator ? :
+=> from this point this was to function by displaying either an array of books or search results.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+EXTRA CODE:
+I didn't have time to add icons with fontawesome and there may be remnants in my code I'll eventually use to polish the site up. I initially wanted to make use of Bootstrap to work with components more quickly but I ran into problems and decided to leave it out for now. I thought it would save time to make use of it but I learned (I should have known) it's best to save new implementations during less time sensitive work.

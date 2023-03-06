@@ -44,11 +44,9 @@ function App() {
   }
 
   let array = data.docs;
-
+  //all API data stored in docs array
   //map over each title name
   //include key
-  //i used for icons
-  //import search and fontawesome for icons - NOT WORKING
   
   const searchHandler = (search) => {
     setSearch(search);
@@ -57,7 +55,7 @@ function App() {
         const newBookList = array.filter((book) => {
           return Object.values(book)
           //return results as string
-          .joint(" ")
+          .join(" ")
           .toLowerCase()
           .includes(search.toLowerCase())
 
@@ -77,6 +75,7 @@ function App() {
   //ADD SEARCH PARAMETERS
 
   //? : search < 1 displays ul 1, search > 1 displays ul
+  //thing div houses links above, navbar is wonky but there to stand in place of App.js to display the pages as a drop down menu - sort of
   return (
     <div className="container">
       <div class="thing">
@@ -99,8 +98,8 @@ function App() {
         {array.map((item, i) => {
           return (
             <li key={i} className="list-item">
-            <i class="fa-solid fa-feather"></i>
-            &nbsp; 
+            {/* <i class="fa-solid fa-feather"></i>
+            &nbsp;  */}
             {item.title}
           </li>
           );
@@ -109,6 +108,9 @@ function App() {
       <Newsletter className="newsletter"/>
     </div>
   )
+  
+  //fa-solid fa-feather fontawesome icon - add later
+  
   // return(
   //   <h1>LIBRARY APP</h1>
   // )

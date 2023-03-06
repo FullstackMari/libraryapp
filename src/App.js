@@ -1,8 +1,10 @@
-import React, {useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import './index.css';
 import Search from "./Search";
 import Newsletter from "./Newsletter";
 import About from "./About";
+import Contact from "./Contact";
+import Navbar from "./Navbar";
 
 function App() {
   const [data, setData] = useState("");
@@ -76,6 +78,7 @@ function App() {
   //? : search < 1 displays ul 1, search > 1 displays ul
   return (
     <div className="container">
+      <Navbar />
       
       <Search term={search} searchKeyword={searchHandler}/>
       

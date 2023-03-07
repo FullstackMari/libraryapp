@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import './index.css';
 import Search from "./Search";
 import Newsletter from "./Newsletter";
-// import Navbar from "./Navbar";
+import Navbar from "./Navbar.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Link } from "react-router-dom";
 
@@ -81,7 +81,7 @@ function App() {
   return (
     <div className="container">
       <div class="thing">
-         {/* <Navbar /> */}
+         <Navbar />
           <Link to="home">HOME</Link>
           {' '}
           <Link to="about">ONLINE RESOURCES</Link>

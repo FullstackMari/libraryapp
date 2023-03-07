@@ -21,7 +21,7 @@ function App() {
   
   useEffect(() => {
       setLoading(true);
-      fetch("https://openlibrary.org/search.json?author=asimov")
+      fetch("https://openlibrary.org/search.json?author=belyaev")
       .then((response) => response.json())
       .then((data) => setData(data))
       .then(() => setLoading())
@@ -48,19 +48,21 @@ function App() {
   //map over each title name
   //include key
   
-  const searchHandler = (search) => {
-    setSearch(search);
-    if (search !== "") {
+  const searchHandler = (event) => {
+    console.log(event)
+    setSearch(event);
+    if (event !== "") {
       //if search is not empty, filter array
         const newBookList = array.filter((book) => {
           return Object.values(book)
           //return results as string
           .join(" ")
           .toLowerCase()
-          .includes(search.toLowerCase())
+          .includes(event.toLowerCase())
 
         });
         setResults(newBookList);
+        console.log(newBookList)
     } else {
       setResults(array);
       //array = data.docs
@@ -95,9 +97,8 @@ function App() {
       
       <Search term={search} searchKeyword={searchHandler}/>
       
-      
-      <ul className="list">
-        {array.map((item, i) => {
+      {search.length < 1 ? (<div><ul className="list">
+        {results.map((item, i) => {
           return (
             <li key={i} className="list-item">
             {/* <i class="fa-solid fa-feather"></i>
@@ -106,7 +107,18 @@ function App() {
           </li>
           );
         })}
-      </ul>
+      </ul> </div>) : (<ul className="list">
+        {results.map((item, i) => {
+          return (
+            <li key={i} className="list-item">
+            {/* <i class="fa-solid fa-feather"></i>
+            &nbsp;  */}
+            {item.title}
+          </li>
+          );
+        })}
+      </ul>) }
+      
       <Newsletter className="newsletter"/>
     </div>
   )

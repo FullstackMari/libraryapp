@@ -9,9 +9,9 @@ Displays a list of books by a given author inside a styled <ul> element.
 Routing
 Currently, routing requires improvement. Visiting localhost:3000 does not render content directly, though all three pages work as intended.
 The pages were renamed to:
-HOME – Main application interface
-ONLINE RESOURCES – Contains curated external links
-HELP – Provides user assistance and guidance
+HOME: Main application interface
+ONLINE RESOURCES: Contains curated external links
+HELP: Provides user assistance and guidance
 
 Search Component
 Search component is exported to the main page but is not fully functional.
@@ -23,12 +23,12 @@ Current state: Data is fetched successfully, but the conditional rendering logic
 
 Getting Started
 
-1. Clone the repository
+Clone the repository
 
 bash
 git clone <your-repository-url>
 
-2. Navigate into the project directory
+Navigate into the project directory
 
 bash
 cd <project-folder>
@@ -38,20 +38,20 @@ Install dependencies
 bash
 npm install
 
-3. Run the development server
+Run the development server
 
 bash
 npm start
 
-4. Visit the app at http://localhost:3000
+Visit the app at http://localhost:3000
 
 Technologies Used
-React – Component-based UI library
-React Router – Client-side routing
-Open Library API – Data source for book information
-JavaScript (ES6+) – Core language
-HTML5 & CSS3 – Markup and styling
-Fetch API – For asynchronous HTTP requests
+React: Component-based UI library
+React Router: Client-side routing
+Open Library API: Data source for book information
+JavaScript (ES6+): Core language
+HTML5 & CSS3: Markup and styling
+Fetch API: For asynchronous HTTP requests
 
 Outstanding Issues to Fix
 Routing: Ensure localhost:3000 shows the Home page by default.

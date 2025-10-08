@@ -1,12 +1,61 @@
-This application is comprised of 3 pages
+This application consists of three primary pages: Home, Online Resources, and Help (originally Home, About, and Contact before the project’s context changed). The application leverages React hooks, routing, and the Open Library API to display book information.
 
-The home page (App.js) uses the useState hook to update information/input from the user and API (data) and useEffect fetches data from the API (Open Library) - it has methods to collect information from the API (JSON) and error handling in case the data is not able to be reached.
+Home Page (App.js)
+Implements useState to manage user input and API data.
+Utilizes useEffect to fetch data from the Open Library API in JSON format.
+Includes error handling to manage scenarios where data cannot be reached.
+Displays a list of books by a given author inside a styled <ul> element.
 
-The home page fetches all books written by an author and these these values are displayed as list items inside of an ul positioned in CSS.
+Routing
+Currently, routing requires improvement. Visiting localhost:3000 does not render content directly, though all three pages work as intended.
+The pages were renamed to:
+HOME – Main application interface
+ONLINE RESOURCES – Contains curated external links
+HELP – Provides user assistance and guidance
 
-The routing will be improved - nothing displays on localport:3000 but there are 3 pages which do: home, about, and contact which I eventually renamed to HOME, ONLINE RESOURCES, AND HELP because the context for the site changed midway. I later included relevant links rather than empty pages as I initially intended to for demonstration purposes.
+Search Component
+Search component is exported to the main page but is not fully functional.
 
-The search component is exported to the main page but I have not yet been able to make it function as intended. Data has been fetched from Open Library but I could not figure out the error in my initial conditional state which used the ternary operator ? :
-=> from this point this was to function by displaying either an array of books or search results.
+Intended behavior:
+Fetch data from Open Library using user input.
+Conditionally display either an array of books or search results using a ternary operator.
+Current state: Data is fetched successfully, but the conditional rendering logic is flawed.
 
-Next update: fontawesome icons, Bootstrap
+Getting Started
+
+1. Clone the repository
+
+bash
+git clone <your-repository-url>
+
+2. Navigate into the project directory
+
+bash
+cd <project-folder>
+
+Install dependencies
+
+bash
+npm install
+
+3. Run the development server
+
+bash
+npm start
+
+4. Visit the app at http://localhost:3000
+
+Technologies Used
+React – Component-based UI library
+React Router – Client-side routing
+Open Library API – Data source for book information
+JavaScript (ES6+) – Core language
+HTML5 & CSS3 – Markup and styling
+Fetch API – For asynchronous HTTP requests
+
+Outstanding Issues to Fix
+Routing: Ensure localhost:3000 shows the Home page by default.
+Search Component: Debug and fix the initial conditional state logic using the ternary operator.
+Error Handling: Verify API error messages are user-friendly and informative.
+Page Structure: Confirm all links and resource references are up-to-date with the new page names and context.
+UI Enhancements: Consider adding loaders or placeholder content when data is being fetched.
